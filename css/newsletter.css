@@ -1,0 +1,64 @@
+/* Main style */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+form {
+    background: linear-gradient(90deg, rgba(147,183,190,1) 0%, rgba(69,69,69,1) 100%);
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 1rem;
+    border: 2px solid var(--dark-color);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+/* Input style */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border: 2px solid var(--light-color);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+input[type="email"],
+select {
+    border: none;
+    padding: .5rem;
+    width: 80%;
+    border-radius: 16px;
+}
+
+/* Checkbox Style */
+fieldset {
+    border: 2px solid var(--light-color);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+/* Button Style */
+
+button[type="submit"] {
+    background: var(--gradient);
+    color: var(--secondary-contrast);
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid var(--light-color);
+    border-radius: 16px;
+    align-self: flex-end;
+    padding: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:active {
+    background: var(--light-color);
+    color: var(--primary-contrast);
+}
