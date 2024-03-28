@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiotechHub</title>
+    <title>BiotechHub - Sign Up For Newsletter</title>
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header class="page-header">
@@ -24,35 +24,57 @@
                 </svg>
             </label>
             <ul>
-                <li><a id="current-page" href="#">Home</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-                <li><a href="./pages/newsletter.html">Newsletter</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a id="current-page" href="#">Newsletter</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <header>
-            <img src="" alt="">
-            <h1>Welcome to BiotechHub.<br>The portal that gathers the latest Biotech related information worldwide</h1>
-        </header>
-        <section>
-            <h2>Latest News</h2>
+        <h1></h1>
+        <form>
             <div>
-                <article>
-                    <img src="" alt="">
-                    <time></time>
-                    <h3></h3>
-                </article>
+                <label for="">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
             </div>
-        </section>
-        <section>
-            <h2>Weekly Science Gallery</h2>
             <div>
-                <img src="./assets/imgs/hal-gatewood-big.webp" alt="">
-                <img src="./assets/imgs/hal-gatewood.webp" alt="">
-                
+                <label for="frequency">Frequency</label>
+                <select name="" id="frequency" required>
+                    <option value="">----- Select an option -----</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
             </div>
-        </section>
+            <fieldset>
+                <legend>Subjects</legend>
+                <div>
+                    <label for="career">Career</label>
+                    <input id="career" type="checkbox">
+                </div>
+
+                <div>
+                    <label for="">Biodivesity</label>
+                    <input id="" type="checkbox">
+                </div>
+
+                <div>
+                    <label for="">Medical</label>
+                    <input id="" type="checkbox">
+                </div>
+
+                <div>
+                    <label for="">Pharmaceutical</label>
+                    <input id="" type="checkbox">
+                </div>
+
+                <div>
+                    <label for="">Marine</label>
+                    <input id="" type="checkbox">
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <svg class="logo-icon" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
