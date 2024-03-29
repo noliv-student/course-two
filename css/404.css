@@ -1,0 +1,19 @@
+main {
+    flex-grow: 1;
+    background-image: url("../assets/imgs/mulyadi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: var(--light-color-transparent);
+    border: 2px solid var(--dark-color);
+    color: var(--primary-contrast);
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 16px;
+}

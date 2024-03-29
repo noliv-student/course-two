@@ -22,6 +22,7 @@
     --primary-contrast: #000;
     --secondary-contrast: #fff;
     --dark-color: #454545;
+    --light-color-transparent: rgba(213, 199, 188, 0.5);
     --light-color: #D5C7BC;
     --primary-gradient: linear-gradient(90deg, rgba(147,183,190,1) 0%, rgba(69,69,69,1) 100%);
     --secondary-gradient: linear-gradient(0deg, rgba(101,59,74,1) 0%, rgba(69,69,69,1) 100%);
