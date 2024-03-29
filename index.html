@@ -10,9 +10,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     >
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <header class="page-header">
+    <a href="#top" title="Back Up" class="back-up-link">
+        <svg aria-labelledby="back-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <title id="back-up">Back up</title>
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/>
+        </svg>
+    </a>
+    <header class="page-header" id="top">
         <p class="logo">
             <svg class="logo-icon animate__animated animate__swing" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <title id="flask">Flask</title>
@@ -27,6 +34,7 @@
                     <path id="nav-svg-path" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
                 </svg>
             </label>
+
             <ul>
                 <li><a id="current-page" href="#">Home</a></li>
                 <li><a href="./pages/faq.html">FAQ</a></li>
@@ -36,11 +44,15 @@
     </header>
     <main>
         <header>
-            <img src="" alt="">
-            <h1>Welcome to BiotechHub.<br>The portal that gathers the latest Biotech related information worldwide</h1>
+            <!-- <img src="./assets/imgs/photoholgic.webp" alt=""> -->
+            <h1 class="animate__animated animate__fadeInLeft">
+                Welcome to BiotechHub.<br>
+                The portal that gathers the latest Biotech related information Worldwide
+            </h1>
         </header>
+
         <section>
-            <h2>Latest News</h2>
+            <h2 class="section-title">Latest News</h2>
             <div>
                 <article>
                     <img src="" alt="">
@@ -49,16 +61,86 @@
                 </article>
             </div>
         </section>
-        <section>
-            <h2>Weekly Science Gallery</h2>
-            <div>
+
+        <section id="gallery">
+            <h2 class="section-title">Weekly Science Gallery</h2>
+            <figure>
+                <figcaption>
+                    Neuron Cell by
+                    <em>@halGatewood</em>
+                </figcaption>
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/hal-gatewood-big.webp">
                     <img src="./assets/imgs/hal-gatewood.webp" alt="Neuron cell">
                 </picture>
-                
-            </div>
-        </section>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    Flask by
+                    <em>@girlWithRedHat</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/girl-with-red-hat-big.webp">
+                    <img src="./assets/imgs/girl-with-red-hat.webp" alt="Flask with colorful bubbles">
+                </picture>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    Chromossomes by
+                    <em>@nationalCancerInstitute</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/national-cancer-institute-big.webp">
+                    <img src="./assets/imgs/national-cancer-institute.webp" alt="Chromossomes">
+                </picture>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    Cells by
+                    <em>@nationalCancerInstitute</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/national-cancer-institute-cell-big.webp">
+                    <img src="./assets/imgs/national-cancer-institute-cell.webp" alt="Cells">
+                </picture>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    Molecular Structure by
+                    <em>@photoholgic</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/photoholgic-big.webp">
+                    <img src="./assets/imgs/photoholgic.webp" alt="Molecular Structure">
+                </picture>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    DNA by
+                    <em>@sangharshLohakare</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/sangharsh-lohakare-big.webp">
+                    <img src="./assets/imgs/sangharsh-lohakare.webp" alt="DNA">
+                </picture>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    Cells by
+                    <em>@sharonPittaway</em>
+                </figcaption>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/sharon-pittaway-big.webp">
+                    <img src="./assets/imgs/sharon-pittaway.webp" alt="Cells">
+                </picture>
+            </figure>
+        </section>   
     </main>
     <footer>
         <svg class="logo-icon" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
