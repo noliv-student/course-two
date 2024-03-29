@@ -1,0 +1,76 @@
+main{
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+h1 { 
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 400;
+}
+
+/* Accordion Style */
+details {
+    background: var(--primary-color);
+    color: var(--primary-contrast);
+    border: 2px solid var(--dark-color);
+    font-family: var(--second-font-family);
+    padding: 1rem;
+}
+
+details:first-child {
+    border-radius: 16px 16px 0 0;
+}
+
+details:last-child {
+    border-radius: 0 0 16px 16px;
+}
+
+summary {
+    font-weight: 700;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+summary svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+details[open] .arrow-icon {
+    transform: rotate(-90deg);
+}
+
+details p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Lists Style */
+details ol {
+    padding-left: .5rem;
+
+}
+
+details ol > li { 
+    list-style-type: decimal;
+}
+
+details ol li {
+    margin-bottom: .5rem;
+    padding-left: .5rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+details ul > li {
+    list-style-type: circle;
+}
+
+li strong {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
