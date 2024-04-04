@@ -19,6 +19,7 @@
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/>
         </svg>
     </a>
+
     <header class="page-header" id="top">
         <p class="logo">
             <svg class="logo-icon animate__animated animate__swing" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -42,6 +43,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <header class="main-header">
             <!-- <img src="./assets/imgs/photoholgic.webp" alt=""> -->
@@ -51,15 +53,106 @@
             </h1>
         </header>
 
-        <section>
+        <section id="articles">
             <h2 class="section-title">Latest News</h2>
-            <div>
-                <article>
-                    <img src="" alt="">
-                    <time></time>
-                    <h3></h3>
-                </article>
-            </div>
+            <article class="card card-primary">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/nathan-wright-big.webp">
+                    <img src="./assets/imgs/nathan-wright.webp" alt="Zumbis apocalypse">
+                </picture>
+                
+                <header>
+                    <time datetime="2024-04-03">April 3th, 2024</time>
+                    <h3>Zumbi Fungi</h3>
+                </header>
+
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
+                        tempore soluta facilis tempora ea repellat aperiam, ullam aut ex.
+                    </p>
+                    <a 
+                        class="btn" 
+                        href="https://pubmed.ncbi.nlm.nih.gov/22046474/" 
+                        target="_blank"
+                    >Read article</a>
+                </footer>
+            </article>
+
+            <article class="card card-secondary">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/marcela-laskoski-big.webp">
+                    <img src="./assets/imgs/marcela-laskoski.webp" alt="Chromossomes">
+                </picture>
+
+                <header>
+                    <time datetime="2024-04-03">April 3th, 2024</time>
+                    <h3>Music and Biology</h3>
+                </header>
+
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
+                        tempore soluta facilis tempora ea repellat aperiam, ullam aut ex.
+                    </p>
+                    <a
+                        class="btn" 
+                        href="https://www.health.harvard.edu/blog/why-is-music-good-for-the-brain-2020100721062"
+                    >Read article</a>
+                </footer>
+            </article>
+
+            <article class="card card-primary">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/Waterbear-big.webp">
+                    <img src="./assets/imgs/Waterbear.webp" alt="Chromossomes">
+                </picture>
+                
+                <header>
+                    <time datetime="2024-04-03">April 3th, 2024</time>
+                    <h3>Super protein from tardigrade</h3>
+                </header>
+
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
+                        tempore soluta facilis tempora ea repellat aperiam, ullam aut ex.
+                    </p>
+                    <a 
+                        class="btn" 
+                        href="https://onlinelibrary.wiley.com/doi/10.1002/pro.4941" 
+                        target="_blank"
+                    >Read article</a>
+                </footer>
+            </article>
+
+            <article class="card card-secondary">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/imgs/nasa-big.webp">
+                    <img src="./assets/imgs/nasa.webp" alt="Chromossomes">
+                </picture>
+                
+                <header>
+                    <time datetime="2024-04-03">April 3th, 2024</time>
+                    <h3>Science in space</h3>
+                </header>
+
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
+                        tempore soluta facilis tempora ea repellat aperiam, ullam aut ex.
+                    </p>
+                    <a 
+                        class="btn" 
+                        href="https://www.genengnews.com/topics/cancer/testing-cancer-drugs-in-space/" 
+                        target="_blank"
+                    >Read article</a>
+                </footer>
+            </article>
         </section>
 
         <section id="gallery">
@@ -131,7 +224,8 @@
             </figure>
         </section>   
     </main>
-    <footer>
+
+    <footer class="footer-page">
         <svg class="logo-icon" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <title id="flask">Flask</title>
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"/>
