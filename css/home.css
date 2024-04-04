@@ -51,6 +51,7 @@ h1 {
     text-align: center;
     padding: 1rem;
     font-size: 1.25rem;
+    font-weight: 700;
     background-color: var(--primary-color);
     color: var(--primary-contrast);
     border-radius: 16px;
