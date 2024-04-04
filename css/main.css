@@ -30,6 +30,44 @@
     --secondary-gradient: linear-gradient(0deg, rgba(101,59,74,1) 0%, rgba(69,69,69,1) 100%);
 }
 
+@keyframes shadowFade {
+    0%   {box-shadow: 
+            5px 5px 10px 2px #FF8080, 
+            -9px 5px 10px 2px #FFE488, 
+            -7px -5px 10px 2px #8CFF85, 
+            12px -5px 10px 2px #80C7FF, 
+            12px 10px 10px 2px #E488FF
+        ;}
+    25%   {box-shadow: 
+            5px 5px 10px 2px #FFE488, 
+            -9px 5px 10px 2px #FF8080, 
+            -7px -5px 10px 2px #8CFF85, 
+            12px -5px 10px 2px #80C7FF, 
+            12px 10px 10px 2px #E488FF
+        ;}
+    50%   {box-shadow: 
+            5px 5px 10px 2px #8CFF85, 
+            -9px 5px 10px 2px #FFE488, 
+            -7px -5px 10px 2px #FF8080, 
+            12px -5px 10px 2px #80C7FF, 
+            12px 10px 10px 2px #E488FF
+        ;}
+    75%   {box-shadow: 
+            5px 5px 10px 2px #80C7FF, 
+            -9px 5px 10px 2px #8CFF85, 
+            -7px -5px 10px 2px #FFE488, 
+            12px -5px 10px 2px #FF8080, 
+            12px 10px 10px 2px #E488FF
+        ;}
+    100%   {box-shadow: 
+            5px 5px 10px 2px #E488FF, 
+            -9px 5px 10px 2px #80C7FF, 
+            -7px -5px 10px 2px #8CFF85, 
+            12px -5px 10px 2px #FFE488, 
+            12px 10px 10px 2px #FF8080
+        ;}
+}
+
 html {
     font-size: var(--base-font-size);
     font-family: var(--base-font-family);
