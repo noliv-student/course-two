@@ -59,7 +59,8 @@ h1 {
 #gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: .5rem;
+    gap: 1rem;
+    margin: 2rem .5rem;
 }
 
 #gallery .section-title {
@@ -68,9 +69,9 @@ h1 {
 
 #gallery figure {
     position: relative;
-    max-height: 170px;
+    max-height: 250px;
     animation: shadowFade 3s ease-in-out 0s infinite normal none;
-    /* animation-play-state: paused; */
+    animation-play-state: paused;
 }
 
 #gallery figcaption {
@@ -105,14 +106,36 @@ h1 {
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+    header.main-header {
+        width: 70%;
+        margin: 3rem auto;
+    }
+
+    #gallery figcaption {
+        font-size: 1rem;
+    }
+
+    #gallery figure {
+        max-height: 300px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     #gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        margin: 5rem 1rem;
+    }
+
+    .section-title {
+        max-width: 50%;
+        width: 100%;
     }
 
     #gallery .section-title {
         grid-column: span 3;
+        justify-self: center;
     }
 
     #gallery figure {
