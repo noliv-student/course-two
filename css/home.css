@@ -111,6 +111,16 @@ article.card .btn {
     padding: .5rem;
     align-self: flex-start;
     border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+article.card .btn::after {
+    content: '➡';
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1rem;
+    padding-left: .5rem;
 }
 
 article.card .btn:hover {
@@ -180,6 +190,7 @@ article.card-primary footer .btn {
     display: none;
 }
 
+/* Page media queries */
 @media screen and (min-width: 768px) {
     /* Main style */
     header.main-header {

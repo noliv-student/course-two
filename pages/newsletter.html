@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiotechHub - Sign Up For Newsletter</title>
 
+    <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/icon/favicon.png">
     <!-- Tailwind CDN -->
     <link 
         href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
@@ -63,48 +65,122 @@
 
             <fieldset>
                 <legend>Subjects</legend>
-                <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                    <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
+                    <li class=" border-b border-gray-200">
                         <div class="flex items-center ps-3">
-                            <input id="career" type="checkbox" value="career" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="career" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            <input 
+                                type="checkbox" 
+                                id="career" 
+                                value="career" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="career" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
                                 Career
                             </label>
                         </div>
                     </li>
 
-                    <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                    <li class="border-b border-gray-200 ">
                         <div class="flex items-center ps-3">
-                            <input id="biodivesity" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="biodivesity" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                            <input 
+                                type="checkbox" 
+                                id="biodivesity" 
+                                value="biodivesity"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="biodivesity" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
                                 Biodivesity
                             </label>
                         </div>
                     </li>
 
-                    <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                    <li class="border-b border-gray-200 ">
                         <div class="flex items-center ps-3">
-                            <input id="medical" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="medical" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Medical
+                            <input 
+                                type="checkbox" 
+                                id="medicine" 
+                                value="medicine" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="medicine" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
+                                Medicine
                             </label>
                         </div>
                     </li>
 
-                    <li class="w-full dark:border-gray-600">
+                    <li class="border-b border-gray-200 ">
                         <div class="flex items-center ps-3">
-                            <input id="pharmaceutical" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="pharmaceutical" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Pharmaceutical
+                            <input 
+                                type="checkbox" 
+                                id="biopharmaceuticals" 
+                                value="biopharmaceuticals" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="biopharmaceuticals" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
+                                Biopharmaceuticals
                             </label>
                         </div>
                     </li>
 
-                    <li class="w-full dark:border-gray-600">
+                    <li class="border-b border-gray-200 ">
                         <div class="flex items-center ps-3">
-                            <input id="marine" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="marine" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Marine
+                            <input 
+                                type="checkbox" 
+                                id="environment" 
+                                value="environment" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="environment" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
+                                Environment
+                            </label>
+                        </div>
+                    </li>
+
+                    <li class="border-b border-gray-200 ">
+                        <div class="flex items-center ps-3">
+                            <input 
+                                type="checkbox" 
+                                id="bioinformatics" 
+                                value="bioinformatics" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >
+                            <label 
+                                for="bioinformatics" 
+                                class="w-full p-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+                            >
+                                Bioinformatics
+                            </label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="flex items-center ps-3">
+                            <input 
+                                type="checkbox" 
+                                id="industry" 
+                                value="industry" 
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                            >
+                            <label 
+                                for="industry" 
+                                class="w-full p-3 text-sm font-medium text-gray-900"
+                            >
+                                Industry
                             </label>
                         </div>
                     </li>

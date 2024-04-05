@@ -34,13 +34,15 @@ summary {
     font-size: 1rem;
 }
 
-summary svg {
-    width: 20px;
+summary::before {
+    content: url("../assets/icon/arrow.svg");
+    display: inline-block;
     height: 20px;
+    width: 20px;
     vertical-align: bottom;
 }
 
-details[open] .arrow-icon {
+details[open] summary::before {
     transform: rotate(-90deg);
 }
 
@@ -52,7 +54,7 @@ details p {
 /* Lists Style */
 details ol {
     padding-left: .5rem;
-
+    margin-top: .5rem;
 }
 
 details ol > li { 
@@ -73,4 +75,38 @@ details ul > li {
 li strong {
     font-weight: 700;
     color: var(--secondary-color);
+}
+
+/* Page Media Queries */
+@media screen and (min-width: 768px) {
+    #faq {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    summary {
+        font-size: 1.2rem;
+    }
+
+    details p {
+        font-size: 1rem;
+    }
+
+    
+    details ol {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #faq {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    details ol li {
+        font-size: .95rem;
+    }
 }

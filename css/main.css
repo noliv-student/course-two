@@ -115,21 +115,32 @@ body {
     fill: var(--primary-color);
     width: 24px;
     height: 24px;
+    z-index: 99999999;
+    position: relative;
+    transition: none;
 }
 
 .main-nav ul {
     position: fixed;
-    top: 60px;
-    width: 100vw;
-    left: -100%;
+    top: 0;
+    width: 100dvw;
+    left: -100dvw;
     height: 100dvh;
-    z-index: 2;
-    background-color: var(--dark-color);
+    z-index: 1;
+    background: var(--dark-color);
     text-align: center;
 }
 
 #hamburger:checked ~ ul{
     left: 0;
+}
+
+#hamburger:checked ~ label > #nav-hamburger {
+    position: fixed;
+    margin: 1rem 1rem 0 0;
+    right: 0;
+    top: 0;
+    transition: none;
 }
 
 .main-nav a {
@@ -174,6 +185,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     gap: 1rem;
 }
