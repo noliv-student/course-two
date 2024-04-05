@@ -24,6 +24,12 @@ legend {
     font-weight: 700;
 }
 
+legend {
+    position: absolute;
+    top: 0;
+    margin-top: .5rem;
+}
+
 /* Input style */
 .input-container {
     display: flex;
@@ -32,6 +38,7 @@ legend {
     border: 2px solid var(--light-color);
     border-radius: 16px;
     padding: 1rem;
+    background-color: var(--primary-color);
 }
 
 input[type="email"],
@@ -44,16 +51,19 @@ select {
 
 /* Checkbox Style */
 fieldset {
+    background-color: var(--primary-color);
     border: 2px solid var(--light-color);
     padding: 1rem;
     border-radius: 16px;
+    position: relative;
+    padding-top: 2.5rem;
 }
 
 /* Button Style */
 
-button {
-    background: var(--gradient);
-    color: var(--secondary-contrast);
+button[type='submit'] {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast);
     font-weight: 700;
     font-size: 1rem;
     border: 2px solid var(--light-color);
@@ -91,10 +101,29 @@ button:active {
 
 @media screen and (min-width: 1024px) {
     form {
-        width: 60%;
+        width: 80%;
+        grid-template-areas: 
+            "email subjects"
+            "frequency subjects"
+            ". button"
+        ;
+        align-items: flex-start;
     }
 
-    fieldset > ul li:nth-child(n + 5) {
-        border: none;
-    } 
+    .input-container:nth-child(1) {
+        grid-area: email;
+        align-self: flex-start;
+    }
+
+    .input-container:nth-child(2) {
+        grid-area: frequency;
+    }
+
+    form fieldset {
+        grid-area: subjects;
+    }
+    
+    form button {
+        grid-area: button;
+    }
 }
