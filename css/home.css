@@ -155,7 +155,7 @@ article.card-primary footer .btn {
     position: relative;
     max-height: 250px;
     animation: shadowFade 3s ease-in-out 0s infinite normal none;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 #gallery figcaption {
