@@ -134,7 +134,7 @@ article.card-secondary .btn {
 }
 
 article.card-secondary,
-article.card-primary .content-info .btn {
+article.card-primary .btn {
     background-color: var(--secondary-color);
     color: var(--secondary-contrast);
 }

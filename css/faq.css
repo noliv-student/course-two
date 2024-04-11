@@ -40,10 +40,12 @@ summary::before {
     height: 20px;
     width: 20px;
     vertical-align: bottom;
+    transition: transform 0.3s ease-in;
 }
 
 details[open] summary::before {
     transform: rotate(-90deg);
+    transition: transform 0.3s ease-out;
 }
 
 details p {
@@ -92,7 +94,6 @@ li strong {
         font-size: 1rem;
     }
 
-    
     details ol {
         display: grid;
         gap: 1rem;
