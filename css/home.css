@@ -98,7 +98,7 @@ article.card h3 {
     font-weight: 700;
 }
 
-article.card footer{
+article.card .content-info {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ article.card-secondary .btn {
 }
 
 article.card-secondary,
-article.card-primary footer .btn {
+article.card-primary .content-info .btn {
     background-color: var(--secondary-color);
     color: var(--secondary-contrast);
 }
@@ -222,6 +222,10 @@ article.card-primary footer .btn {
 }
 
 @media screen and (min-width: 992px) {
+    .section-title {
+        max-width: 50%;
+        width: 100%;
+    }
     /* Articles style */
     #articles {
         grid-template-columns: repeat(4, 1fr);
@@ -246,11 +250,6 @@ article.card-primary footer .btn {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin: 5rem 1rem;
-    }
-
-    .section-title {
-        max-width: 50%;
-        width: 100%;
     }
 
     #gallery .section-title {

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiotechHub</title>
 
-    <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg">
-    <link rel="icon" type="image/png" href="/assets/icon/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
+    <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
     
     <link
         rel="stylesheet"
@@ -31,7 +31,7 @@
             </svg>
             BiotechHub
         </p>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main Navigation">
             <input type="checkbox" id="hamburger">
             <label for="hamburger" class="hamburger-label">
                 <svg aria-labelledby="hamburger-logo" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="nav-hamburger">
@@ -56,7 +56,7 @@
             </h1>
         </header>
 
-        <section id="articles">
+        <section id="articles" aria-label="Latest News">
             <h2 class="section-title">Latest News</h2>
             <article class="card card-primary">
                 <picture>
@@ -69,7 +69,7 @@
                     <h3>Zumbi Fungi</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -80,7 +80,7 @@
                         href="https://pubmed.ncbi.nlm.nih.gov/22046474/" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-secondary">
@@ -94,7 +94,7 @@
                     <h3>Music and Biology</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -104,7 +104,7 @@
                         class="btn" 
                         href="https://www.health.harvard.edu/blog/why-is-music-good-for-the-brain-2020100721062"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-primary">
@@ -118,7 +118,7 @@
                     <h3>Super protein from tardigrade</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -129,7 +129,7 @@
                         href="https://onlinelibrary.wiley.com/doi/10.1002/pro.4941" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-secondary">
@@ -143,7 +143,7 @@
                     <h3>Science in space</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -154,11 +154,11 @@
                         href="https://www.genengnews.com/topics/cancer/testing-cancer-drugs-in-space/" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" aria-label="Weekly Science Gallery">
             <h2 class="section-title">Weekly Science Gallery</h2>
             <figure>
                 <figcaption>
@@ -189,7 +189,7 @@
                 </figcaption>
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/national-cancer-institute-cell-big.webp">
-                    <img src="./assets/imgs/national-cancer-institute-cell.webp" alt="Cells">
+                    <img src="./assets/imgs/national-cancer-institute-cell.webp" alt="Colorful Cells">
                 </picture>
             </figure>
 
