@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiotechHub</title>
 
-    <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg">
-    <link rel="icon" type="image/png" href="/assets/icon/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
+    <link rel="icon" type="image/png" href="./assets/icon/favicon.png">
     
     <link
         rel="stylesheet"
@@ -17,7 +17,7 @@
 </head>
 <body>
     <a href="#top" title="Back Up" class="back-up-link">
-        <svg aria-labelledby="back-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <svg aria-labelledby="back-up" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <title id="back-up">Back up</title>
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/>
         </svg>
@@ -31,10 +31,11 @@
             </svg>
             BiotechHub
         </p>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main Navigation">
             <input type="checkbox" id="hamburger">
             <label for="hamburger" class="hamburger-label">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="nav-hamburger">
+                <svg aria-labelledby="hamburger-logo" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="nav-hamburger">
+                    <title id="hamburger-logo">Hamburger Menu</title>
                     <path id="nav-svg-path" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
                 </svg>
             </label>
@@ -49,14 +50,13 @@
 
     <main>
         <header class="main-header">
-            <!-- <img src="./assets/imgs/photoholgic.webp" alt=""> -->
             <h1 class="animate__animated animate__fadeInLeft">
                 Welcome to BiotechHub.<br>
                 The portal that gathers the latest Biotech related information Worldwide
             </h1>
         </header>
 
-        <section id="articles">
+        <section id="articles" aria-label="Latest News">
             <h2 class="section-title">Latest News</h2>
             <article class="card card-primary">
                 <picture>
@@ -69,7 +69,7 @@
                     <h3>Zumbi Fungi</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -80,13 +80,13 @@
                         href="https://pubmed.ncbi.nlm.nih.gov/22046474/" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-secondary">
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/marcela-laskoski-big.webp">
-                    <img src="./assets/imgs/marcela-laskoski.webp" alt="Chromossomes">
+                    <img src="./assets/imgs/marcela-laskoski.webp" alt="DJ">
                 </picture>
 
                 <header>
@@ -94,7 +94,7 @@
                     <h3>Music and Biology</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -104,13 +104,13 @@
                         class="btn" 
                         href="https://www.health.harvard.edu/blog/why-is-music-good-for-the-brain-2020100721062"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-primary">
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/Waterbear-big.webp">
-                    <img src="./assets/imgs/Waterbear.webp" alt="Chromossomes">
+                    <img src="./assets/imgs/Waterbear.webp" alt="Tardigrade">
                 </picture>
                 
                 <header>
@@ -118,7 +118,7 @@
                     <h3>Super protein from tardigrade</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -129,13 +129,13 @@
                         href="https://onlinelibrary.wiley.com/doi/10.1002/pro.4941" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
 
             <article class="card card-secondary">
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/nasa-big.webp">
-                    <img src="./assets/imgs/nasa.webp" alt="Chromossomes">
+                    <img src="./assets/imgs/nasa.webp" alt="Space">
                 </picture>
                 
                 <header>
@@ -143,7 +143,7 @@
                     <h3>Science in space</h3>
                 </header>
 
-                <footer>
+                <div class="content-info">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Earum voluptate deleniti dolore ipsam culpa reiciendis optio accusantium minus laboriosam explicabo,
@@ -154,11 +154,11 @@
                         href="https://www.genengnews.com/topics/cancer/testing-cancer-drugs-in-space/" 
                         target="_blank"
                     >Read article</a>
-                </footer>
+                </div>
             </article>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" aria-label="Weekly Science Gallery">
             <h2 class="section-title">Weekly Science Gallery</h2>
             <figure>
                 <figcaption>
@@ -189,7 +189,7 @@
                 </figcaption>
                 <picture>
                     <source media="(min-width: 992px)" srcset="./assets/imgs/national-cancer-institute-cell-big.webp">
-                    <img src="./assets/imgs/national-cancer-institute-cell.webp" alt="Cells">
+                    <img src="./assets/imgs/national-cancer-institute-cell.webp" alt="Colorful Cells">
                 </picture>
             </figure>
 
@@ -229,8 +229,8 @@
     </main>
 
     <footer class="footer-page">
-        <svg class="logo-icon" aria-labelledby="flask" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <title id="flask">Flask</title>
+        <svg class="logo-icon" aria-labelledby="flask-footer" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <title id="flask-footer">Flask</title>
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"/>
         </svg>
         <p>Created by Natalia Oliveira</p>

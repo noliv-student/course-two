@@ -19,11 +19,11 @@ details {
     padding: 1rem;
 }
 
-details:first-child {
+details:first-of-type {
     border-radius: 16px 16px 0 0;
 }
 
-details:last-child {
+details:last-of-type {
     border-radius: 0 0 16px 16px;
 }
 
@@ -74,12 +74,12 @@ details ul > li {
 
 li strong {
     font-weight: 700;
-    color: var(--secondary-color);
+    /* color: var(--dark-color); */
 }
 
 /* Page Media Queries */
 @media screen and (min-width: 768px) {
-    #faq {
+    main {
         width: 80%;
         margin: 0 auto;
     }
@@ -101,7 +101,7 @@ li strong {
 }
 
 @media screen and (min-width: 1024px) {
-    #faq {
+    main {
         width: 60%;
         margin: 0 auto;
     }
